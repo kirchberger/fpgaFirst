@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/Alex/Documents/dailyprojects/fpgaFirst/adder.xst" -ofn "/home/Alex/Documents/dailyprojects/fpgaFirst/adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder.ucf -p xc6slx9-csg324-2 adder.ngc adder.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder_map.ncd adder.ngd adder.pcf 
+par -w -intstyle ise -ol high -mt off adder_map.ncd adder.ncd adder.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adder.twx adder.ncd -o adder.twr adder.pcf -ucf adder.ucf 
+bitgen -intstyle ise -f adder.ut adder.ncd 
+bitgen -intstyle ise -f adder.ut adder.ncd 

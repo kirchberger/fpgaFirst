@@ -1,0 +1,8 @@
+net "A"		PULLUP;
+net "B"		PULLUP;
+net "Cin"	PULLUP;
+net "A" 		LOC = M18;
+net "B" 		LOC = L18;
+net "Cin" 	LOC = M16;
+net "Sum"	LOC = P15;
+net "Cout"	LOC = P16;

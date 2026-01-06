@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/Alex/Documents/dailyprojects/fpgaFirst/adder.ncd
+OUTFILE=/home/Alex/Documents/dailyprojects/fpgaFirst/adder.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg324
+WORKINGDIR=/home/Alex/Documents/dailyprojects/fpgaFirst
+LICENSE=WebPack
+USER_INFO=213694623_0_0_215
